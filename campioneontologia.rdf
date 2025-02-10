@@ -1,0 +1,1931 @@
+@prefix : <http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@base <http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/> .
+
+<http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD> rdf:type owl:Ontology ;
+                                                                   owl:imports <file:/C:/Users/sabry/Downloads/etymon.ttl> ,
+                                                                               <file:/C:/Users/sabry/Downloads/etimologiallodef%20(1).rdf> ,
+                                                                               lemonEty: ,
+                                                                               <http://www.w3.org/2004/02/skos/core> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://lari-datasets.ilc.cnr.it/lemonEty#etymology
+lemonEty:etymology rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isPartOf
+terms:isPartOf rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#canonicalForm
+ontolex:canonicalForm rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/lemon/lime#entry
+lime:entry rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/lemon/lime#language
+lime:language rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lari-datasets.ilc.cnr.it/lemonEty#Etymology
+lemonEty:Etymology rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/lime#Lexicon
+lime:Lexicon rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#Form
+ontolex:Form rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+ontolex:LexicalEntry rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://etimologiallod.org#àbaco_etymology
+<http://etimologiallod.org#àbaco_etymology> rdf:type owl:NamedIndividual ,
+                                                     lemonEty:Etymology .
+
+
+###  http://etimologiallod.org#àbaco_le_IT
+<http://etimologiallod.org#àbaco_le_IT> rdf:type owl:NamedIndividual ,
+                                                 ontolex:LexicalEntry ;
+                                        lemonEty:etymology <http://etimologiallod.org#àbaco_etymology> ;
+                                        ontolex:canonicalForm <http://etimologiallod.org#àbaco_lemma_IT> .
+
+
+###  http://etimologiallod.org#àbaco_lemma_IT
+<http://etimologiallod.org#àbaco_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                    ontolex:Form .
+
+
+###  http://lila-erc.eu/data/id/lemma/129602
+<http://lila-erc.eu/data/id/lemma/129602> rdf:type owl:NamedIndividual ;
+                                          terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://lila-erc.eu/data/id/lemma/129603
+<http://lila-erc.eu/data/id/lemma/129603> rdf:type owl:NamedIndividual ;
+                                          terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://lila-erc.eu/data/id/lemma/129703
+<http://lila-erc.eu/data/id/lemma/129703> rdf:type owl:NamedIndividual ;
+                                          terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://lila-erc.eu/data/id/lemma/129731
+<http://lila-erc.eu/data/id/lemma/129731> rdf:type owl:NamedIndividual ;
+                                          terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://lila-erc.eu/data/id/lemma/130013
+<http://lila-erc.eu/data/id/lemma/130013> rdf:type owl:NamedIndividual ;
+                                          terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://lila-erc.eu/data/id/lemma/24845
+<http://lila-erc.eu/data/id/lemma/24845> rdf:type owl:NamedIndividual ;
+                                         terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://lila-erc.eu/data/id/lemma/84055
+<http://lila-erc.eu/data/id/lemma/84055> rdf:type owl:NamedIndividual ;
+                                         terms:isPartOf "https://lila-erc.eu/data/id/lemma/LemmaBank" .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/etyLink_valvae_valva
+<http://www.semanticweb.org/sabry/llodproject/etyLink_valvae_valva> rdf:type owl:NamedIndividual ,
+                                                                             lemonEty:EtyLink ;
+                                                                    lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/valvae_et_LA> ;
+                                                                    lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/valva_le_IT> ;
+                                                                    rdfs:comment "An etymological relationship between 'valvae' (in Latin) and 'valva' (in Italian)"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/etyLink_vas_vasculum
+<http://www.semanticweb.org/sabry/llodproject/etyLink_vas_vasculum> rdf:type owl:NamedIndividual ,
+                                                                             lemonEty:EtyLink ;
+                                                                    lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/vas_et_LA> ;
+                                                                    lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/vasculum_et_LA> ;
+                                                                    rdfs:comment "An etymological relationship between 'vas' (in Latin) and 'vasculum' (in Latin)"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/etyLink_vasculum_vascolare
+<http://www.semanticweb.org/sabry/llodproject/etyLink_vasculum_vascolare> rdf:type owl:NamedIndividual ,
+                                                                                   lemonEty:EtyLink ;
+                                                                          lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/vasculum_et_LA> ;
+                                                                          lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/vascolare_le_IT> ;
+                                                                          rdfs:comment "An etymological relationship between 'vasculum' (in Latin) and 'vascolare' (in Italian)"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/etyLink_velarium_velario
+<http://www.semanticweb.org/sabry/llodproject/etyLink_velarium_velario> rdf:type owl:NamedIndividual ,
+                                                                                 lemonEty:EtyLink ;
+                                                                        lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/velarium_et_LA> ;
+                                                                        lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/velario_le_IT> ;
+                                                                        rdfs:comment "An etymological relationship between 'velarium' (in Latin) and 'velario' (in Italian)"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/etyLink_velum_vela
+<http://www.semanticweb.org/sabry/llodproject/etyLink_velum_vela> rdf:type owl:NamedIndividual ,
+                                                                           lemonEty:EtyLink ;
+                                                                  lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/velum_et_LA> ;
+                                                                  lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/vela_le_IT> ;
+                                                                  rdfs:comment "An etymological relationship between 'velum' (in Latin) and 'vela' (in Italian)"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/etyLink_velum_velarium
+<http://www.semanticweb.org/sabry/llodproject/etyLink_velum_velarium> rdf:type owl:NamedIndividual ,
+                                                                               lemonEty:EtyLink ;
+                                                                      lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/velum_et_LA> ;
+                                                                      lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/velarium_et_LA> ;
+                                                                      rdfs:comment "An etymological relationship between 'velum' (in Latin) and 'velarium' (in Latin)"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/lexiconIT
+<http://www.semanticweb.org/sabry/llodproject/lexiconIT> rdf:type owl:NamedIndividual ,
+                                                                  lime:Lexicon ;
+                                                         lime:entry <http://www.semanticweb.org/sabry/llodproject/valva_le_IT> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/vascolare_le_IT> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/vela_le_IT> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/velario_le_IT> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/veneri_le_IT> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/vestibolo_le_IT> ;
+                                                         lime:language "it" .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/lexiconLA
+<http://www.semanticweb.org/sabry/llodproject/lexiconLA> rdf:type owl:NamedIndividual ,
+                                                                  lime:Lexicon ;
+                                                         lime:entry <http://www.semanticweb.org/sabry/llodproject/valvae_et_LA> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/vas_et_LA> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/vasculum_et_LA> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/velarium_et_LA> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/velum_et_LA> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/venus_et_LA> ,
+                                                                    <http://www.semanticweb.org/sabry/llodproject/vestibulum_et_LA> ;
+                                                         lime:language "la" .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/valva_etymology
+<http://www.semanticweb.org/sabry/llodproject/valva_etymology> rdf:type owl:NamedIndividual ,
+                                                                        lemonEty:Etymology ;
+                                                               lemonEty:hasEtyLink <http://www.semanticweb.org/sabry/llodproject/etyLink_valvae_valva> ;
+                                                               rdfs:comment "An etymology for the Italian word 'valva'"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/valva_le_IT
+<http://www.semanticweb.org/sabry/llodproject/valva_le_IT> rdf:type owl:NamedIndividual ,
+                                                                    ontolex:LexicalEntry ;
+                                                           lemonEty:etymology <http://www.semanticweb.org/sabry/llodproject/valva_etymology> ;
+                                                           ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/valva_lemma_IT> ;
+                                                           rdfs:comment "Lexical entry for the Italian word \"valva\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/valva_lemma_IT
+<http://www.semanticweb.org/sabry/llodproject/valva_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                                       ontolex:Form ;
+                                                              ontolex:writtenRep "valva" ;
+                                                              rdfs:comment "The Italian lemma \"valva\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/valvae_et_LA
+<http://www.semanticweb.org/sabry/llodproject/valvae_et_LA> rdf:type owl:NamedIndividual ,
+                                                                     lemonEty:Etymon ;
+                                                            ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/valvae_lemma_LA> ;
+                                                            rdfs:comment "The Latin etymon \"valvae\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/valvae_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/valvae_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                        ontolex:Form ;
+                                                               ontolex:writtenRep "valvae" ;
+                                                               rdfs:comment "The Latin lemma \"valvae\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vas_et_LA
+<http://www.semanticweb.org/sabry/llodproject/vas_et_LA> rdf:type owl:NamedIndividual ,
+                                                                  lemonEty:Etymon ;
+                                                         ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/vas_lemma_LA> ;
+                                                         rdfs:comment "The Latin etymon \"vas\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vas_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/vas_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                     ontolex:Form ;
+                                                            skos:exactMatch <http://lila-erc.eu/data/id/lemma/129602> ;
+                                                            ontolex:writtenRep "vas" ;
+                                                            rdfs:comment "The Latin lemma \"vas\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vascolare_etymology
+<http://www.semanticweb.org/sabry/llodproject/vascolare_etymology> rdf:type owl:NamedIndividual ,
+                                                                            lemonEty:Etymology ;
+                                                                   lemonEty:hasEtyLink <http://www.semanticweb.org/sabry/llodproject/etyLink_vas_vasculum> ,
+                                                                                       <http://www.semanticweb.org/sabry/llodproject/etyLink_vasculum_vascolare> ;
+                                                                   lemonEty:startingLink <http://www.semanticweb.org/sabry/llodproject/etyLink_vas_vasculum> ;
+                                                                   rdfs:comment "An etymology for the Italian word 'vascolare'"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vascolare_le_IT
+<http://www.semanticweb.org/sabry/llodproject/vascolare_le_IT> rdf:type owl:NamedIndividual ,
+                                                                        ontolex:LexicalEntry ;
+                                                               lemonEty:etymology <http://www.semanticweb.org/sabry/llodproject/vascolare_etymology> ;
+                                                               ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/vascolare_lemma_IT> ;
+                                                               rdfs:comment "Lexical entry for the Italian word \"vascolare\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vascolare_lemma_IT
+<http://www.semanticweb.org/sabry/llodproject/vascolare_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                                           ontolex:Form ;
+                                                                  ontolex:writtenRep "vascolare" ;
+                                                                  rdfs:comment "The Italian lemma \"vascolare\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vasculum_et_LA
+<http://www.semanticweb.org/sabry/llodproject/vasculum_et_LA> rdf:type owl:NamedIndividual ,
+                                                                       lemonEty:Etymon ;
+                                                              ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/vasculum_lemma_LA> ;
+                                                              rdfs:comment "The Latin etymon \"vasculum\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vasculum_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/vasculum_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                          ontolex:Form ;
+                                                                 skos:exactMatch <http://lila-erc.eu/data/id/lemma/129603> ;
+                                                                 ontolex:writtenRep "vasculum" ;
+                                                                 rdfs:comment "The Latin lemma \"vasculum\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vela_etymology
+<http://www.semanticweb.org/sabry/llodproject/vela_etymology> rdf:type owl:NamedIndividual ,
+                                                                       lemonEty:Etymology ;
+                                                              lemonEty:hasEtyLink <http://www.semanticweb.org/sabry/llodproject/etyLink_velum_vela> ;
+                                                              rdfs:comment "An etymology for the Italian word 'vela'"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vela_le_IT
+<http://www.semanticweb.org/sabry/llodproject/vela_le_IT> rdf:type owl:NamedIndividual ,
+                                                                   ontolex:LexicalEntry ;
+                                                          lemonEty:etymology <http://www.semanticweb.org/sabry/llodproject/vela_etymology> ;
+                                                          ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/vela_lemma_IT> ;
+                                                          rdfs:comment "Lexical entry for the Italian word \"vela\"" .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vela_lemma_IT
+<http://www.semanticweb.org/sabry/llodproject/vela_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                                      ontolex:Form ;
+                                                             ontolex:writtenRep "vela" .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velario_etymology
+<http://www.semanticweb.org/sabry/llodproject/velario_etymology> rdf:type owl:NamedIndividual ,
+                                                                          lemonEty:Etymology ;
+                                                                 lemonEty:hasEtyLink <http://www.semanticweb.org/sabry/llodproject/etyLink_velarium_velario> ,
+                                                                                     <http://www.semanticweb.org/sabry/llodproject/etyLink_velum_velarium> ;
+                                                                 lemonEty:startingLink <http://www.semanticweb.org/sabry/llodproject/etyLink_velum_velarium> ;
+                                                                 rdfs:comment "An etymology for the Italian word 'velario'"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velario_le_IT
+<http://www.semanticweb.org/sabry/llodproject/velario_le_IT> rdf:type owl:NamedIndividual ,
+                                                                      ontolex:LexicalEntry ;
+                                                             lemonEty:etymology <http://www.semanticweb.org/sabry/llodproject/velario_etymology> ;
+                                                             ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/velario_lemma_IT> ;
+                                                             rdfs:comment "Lexical entry for the Italian word \"velario\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velario_lemma_IT
+<http://www.semanticweb.org/sabry/llodproject/velario_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                                         ontolex:Form ;
+                                                                ontolex:writtenRep "velario" ;
+                                                                rdfs:comment "The Italian lemma \"velario\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velarium_et_LA
+<http://www.semanticweb.org/sabry/llodproject/velarium_et_LA> rdf:type owl:NamedIndividual ,
+                                                                       lemonEty:Etymon ;
+                                                              ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/velarium_lemma_LA> ;
+                                                              rdfs:comment "The Latin etymon \"velarium\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velarium_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/velarium_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                          ontolex:Form ;
+                                                                 skos:exactMatch <http://lila-erc.eu/data/id/lemma/129703> ;
+                                                                 ontolex:writtenRep "velarium" ;
+                                                                 rdfs:comment "The Latin lemma \"velarium\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velum_et_LA
+<http://www.semanticweb.org/sabry/llodproject/velum_et_LA> rdf:type owl:NamedIndividual ,
+                                                                    lemonEty:Etymon ;
+                                                           ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/velum_lemma_LA> ;
+                                                           rdfs:comment "The Latin etymon \"velum\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/velum_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/velum_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                       ontolex:Form ;
+                                                              skos:exactMatch <http://lila-erc.eu/data/id/lemma/129731> ;
+                                                              ontolex:writtenRep "velum" ;
+                                                              rdfs:comment "The Latin lemma \"velum\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/venere_lemma_IT
+<http://www.semanticweb.org/sabry/llodproject/venere_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                                        ontolex:Form ;
+                                                               ontolex:writtenRep "Venere" ;
+                                                               rdfs:comment "The Italian lemma \"Venere\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/veneri_etymology
+<http://www.semanticweb.org/sabry/llodproject/veneri_etymology> rdf:type owl:NamedIndividual ,
+                                                                         lemonEty:Etymology ;
+                                                                lemonEty:hasEtyLink :etyLink_venus_veneri ;
+                                                                rdfs:comment "An etymology for the Italian word 'veneri'"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/veneri_le_IT
+<http://www.semanticweb.org/sabry/llodproject/veneri_le_IT> rdf:type owl:NamedIndividual ,
+                                                                     ontolex:LexicalEntry ;
+                                                            lemonEty:etymology <http://www.semanticweb.org/sabry/llodproject/veneri_etymology> ;
+                                                            ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/venere_lemma_IT> ;
+                                                            rdfs:comment "Lexical entry for the Italian word \"Veneri\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/venus_et_LA
+<http://www.semanticweb.org/sabry/llodproject/venus_et_LA> rdf:type owl:NamedIndividual ,
+                                                                    lemonEty:Etymon ;
+                                                           ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/venus_lemma_LA> ;
+                                                           rdfs:comment "The Latin etymon \"Venus\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/venus_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/venus_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                       ontolex:Form ;
+                                                              ontolex:writtenRep "Venus" ;
+                                                              rdfs:comment "The Latin lemma \"Venus\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vestibolo_etymology
+<http://www.semanticweb.org/sabry/llodproject/vestibolo_etymology> rdf:type owl:NamedIndividual ,
+                                                                            lemonEty:Etymology ;
+                                                                   lemonEty:hasEtyLink :etyLink_vestibulum_vestibolo ;
+                                                                   rdfs:comment "An etymology for the Italian word 'vestibolo'"@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vestibolo_le_IT
+<http://www.semanticweb.org/sabry/llodproject/vestibolo_le_IT> rdf:type owl:NamedIndividual ,
+                                                                        ontolex:LexicalEntry ;
+                                                               lemonEty:etymology <http://www.semanticweb.org/sabry/llodproject/vestibolo_etymology> ;
+                                                               ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/vestibolo_lemma_IT> ;
+                                                               ontolex:evokes <https://www.wikidata.org/wiki/Q301276> ;
+                                                               ontolex:sense :vestibolo_sense ;
+                                                               rdfs:comment "Lexical entry for the Italian word \"vestibolo\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vestibolo_lemma_IT
+<http://www.semanticweb.org/sabry/llodproject/vestibolo_lemma_IT> rdf:type owl:NamedIndividual ,
+                                                                           ontolex:Form ;
+                                                                  ontolex:writtenRep "vestibolo" ;
+                                                                  rdfs:comment "The Italian lemma \"vestibolo\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vestibulum_et_LA
+<http://www.semanticweb.org/sabry/llodproject/vestibulum_et_LA> rdf:type owl:NamedIndividual ,
+                                                                         lemonEty:Etymon ;
+                                                                ontolex:canonicalForm <http://www.semanticweb.org/sabry/llodproject/vestibulum_lemma_LA> ;
+                                                                rdfs:comment "The Latin etymon \"vestibulum\""@en .
+
+
+###  http://www.semanticweb.org/sabry/llodproject/vestibulum_lemma_LA
+<http://www.semanticweb.org/sabry/llodproject/vestibulum_lemma_LA> rdf:type owl:NamedIndividual ,
+                                                                            ontolex:Form ;
+                                                                   ontolex:writtenRep "vestibulum" ;
+                                                                   rdfs:comment "The Latin lemma \"vestibulum\""@en .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_saepio_transetto
+:etyLink_saepio_transetto rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :saepio_et_LA ;
+                          lemonEty:etyTarget :transetto_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_socculus_zoccolo
+:etyLink_socculus_zoccolo rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :socculus_et_LA ;
+                          lemonEty:etyTarget :zoccolo_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tabella_tabellone
+:etyLink_tabella_tabellone rdf:type owl:NamedIndividual ,
+                                    lemonEty:EtyLink ;
+                           lemonEty:etySource :tabella_le_IT ;
+                           lemonEty:etyTarget :tabellone_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_taberna_tabernaculum
+:etyLink_taberna_tabernaculum rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tabernaculum_tabernacolo
+:etyLink_tabernaculum_tabernacolo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_telamon_telamone
+:etyLink_telamon_telamone rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :telamon_et_LA ;
+                          lemonEty:etyTarget :telamone_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tempero_tempera
+:etyLink_tempero_tempera rdf:type owl:NamedIndividual ,
+                                  lemonEty:EtyLink ;
+                         lemonEty:etySource :tempero_et_LA ;
+                         lemonEty:etyTarget :tempera_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tempus_tempero
+:etyLink_tempus_tempero rdf:type owl:NamedIndividual ,
+                                 lemonEty:EtyLink ;
+                        lemonEty:etySource :tempus_et_LA ;
+                        lemonEty:etyTarget :tempero_et_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tessera_tessere
+:etyLink_tessera_tessere rdf:type owl:NamedIndividual ,
+                                  lemonEty:EtyLink ;
+                         lemonEty:etySource :tessera_et_LA ;
+                         lemonEty:etyTarget :tessere_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tetrastylos_tetrastilo
+:etyLink_tetrastylos_tetrastilo rdf:type owl:NamedIndividual ,
+                                         lemonEty:EtyLink ;
+                                lemonEty:etySource :tetrastylos_et_LA ;
+                                lemonEty:etyTarget :tetrastilo_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_theatrum_teatro
+:etyLink_theatrum_teatro rdf:type owl:NamedIndividual ,
+                                  lemonEty:EtyLink ;
+                         lemonEty:etySource :theatrum_et_LA ;
+                         lemonEty:etyTarget :teatro_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_theca_teca
+:etyLink_theca_teca rdf:type owl:NamedIndividual ,
+                             lemonEty:EtyLink ;
+                    lemonEty:etySource :theca_et_LA ;
+                    lemonEty:etyTarget :teca_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_thermae_terme
+:etyLink_thermae_terme rdf:type owl:NamedIndividual ,
+                                lemonEty:EtyLink ;
+                       lemonEty:etySource :thermae_et_LA ;
+                       lemonEty:etyTarget :terme_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_thesaurus_tesoro
+:etyLink_thesaurus_tesoro rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :thesaurus_et_LA ;
+                          lemonEty:etyTarget :tesoro_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tiburium_tiburio
+:etyLink_tiburium_tiburio rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :tiburium_et_LA ;
+                          lemonEty:etyTarget :tiburio_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tiburtinus_travertino
+:etyLink_tiburtinus_travertino rdf:type owl:NamedIndividual ,
+                                        lemonEty:EtyLink ;
+                               lemonEty:etySource :tiburtinus_et_LA ;
+                               lemonEty:etyTarget :travertino_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_toreutice_toreutica
+:etyLink_toreutice_toreutica rdf:type owl:NamedIndividual ,
+                                      lemonEty:EtyLink ;
+                             lemonEty:etySource :toreutice_et_LA ;
+                             lemonEty:etyTarget :toreutica_le_it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tortilis_tortile
+:etyLink_tortilis_tortile rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :tortilis_et_LA ;
+                          lemonEty:etyTarget :tortile_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_torus_toro
+:etyLink_torus_toro rdf:type owl:NamedIndividual ,
+                             lemonEty:EtyLink ;
+                    lemonEty:etySource :torus_et_LA ;
+                    lemonEty:etyTarget :toro_le_it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_trabs_trabeazione
+:etyLink_trabs_trabeazione rdf:type owl:NamedIndividual ,
+                                    lemonEty:EtyLink ;
+                           lemonEty:etySource :trabs_et_LA ;
+                           lemonEty:etyTarget :trabeazione_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_trans_transetto
+:etyLink_trans_transetto rdf:type owl:NamedIndividual ,
+                                  lemonEty:EtyLink ;
+                         lemonEty:etySource :trans_af_LA ;
+                         lemonEty:etyTarget :transetto_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_transenna_transenna
+:etyLink_transenna_transenna rdf:type owl:NamedIndividual ,
+                                      lemonEty:EtyLink ;
+                             lemonEty:etySource :transenna_et_LA ;
+                             lemonEty:etyTarget :transenna_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_transfiguratio_trasfigurazione
+:etyLink_transfiguratio_trasfigurazione rdf:type owl:NamedIndividual ,
+                                                 lemonEty:EtyLink ;
+                                        lemonEty:etySource :transfiguratio_et_LA ;
+                                        lemonEty:etyTarget :trasfigurazione_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tribunal_tribuna
+:etyLink_tribunal_tribuna rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :tribunal_et_LA ;
+                          lemonEty:etyTarget :tribuna_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_triclinium_triclinio
+:etyLink_triclinium_triclinio rdf:type owl:NamedIndividual ,
+                                       lemonEty:EtyLink ;
+                              lemonEty:etySource :triclinium_et_LA ;
+                              lemonEty:etyTarget :triclinio_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_triforis_trifora
+:etyLink_triforis_trifora rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :triforis_et_LA ;
+                          lemonEty:etyTarget :trifora_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_triforium_triforio
+:etyLink_triforium_triforio rdf:type owl:NamedIndividual ,
+                                     lemonEty:EtyLink ;
+                            lemonEty:etySource :triforium_et_LA ;
+                            lemonEty:etyTarget :triforio_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_triglyphus_triglifo
+:etyLink_triglyphus_triglifo rdf:type owl:NamedIndividual ,
+                                      lemonEty:EtyLink ;
+                             lemonEty:etySource :triglyphus_et_LA ;
+                             lemonEty:etyTarget :triglifo_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tripus_tripode
+:etyLink_tripus_tripode rdf:type owl:NamedIndividual ,
+                                 lemonEty:EtyLink ;
+                        lemonEty:etySource :tripus_et_LA ;
+                        lemonEty:etyTarget :tripode_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tumulus_tumulo
+:etyLink_tumulus_tumulo rdf:type owl:NamedIndividual ,
+                                 lemonEty:EtyLink ;
+                        lemonEty:etySource :tumulus_et_LA ;
+                        lemonEty:etyTarget :tumulo_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tuphus_tufo
+:etyLink_tuphus_tufo rdf:type owl:NamedIndividual ,
+                              lemonEty:EtyLink ;
+                     lemonEty:etySource :tuphus_et_LA ;
+                     lemonEty:etyTarget :tufo_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_turris_torre
+:etyLink_turris_torre rdf:type owl:NamedIndividual ,
+                               lemonEty:EtyLink ;
+                      lemonEty:etySource :turris_et_LA ;
+                      lemonEty:etyTarget :torre_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tuscanicus_tuscanico
+:etyLink_tuscanicus_tuscanico rdf:type owl:NamedIndividual ,
+                                       lemonEty:EtyLink ;
+                              lemonEty:etySource :tuscanicus_et_LA ;
+                              lemonEty:etyTarget :tuscanico_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_tympanum_timpano
+:etyLink_tympanum_timpano rdf:type owl:NamedIndividual ,
+                                   lemonEty:EtyLink ;
+                          lemonEty:etySource :tympanum_et_LA ;
+                          lemonEty:etyTarget :timpano_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_urna_urna
+:etyLink_urna_urna rdf:type owl:NamedIndividual ,
+                            lemonEty:EtyLink ;
+                   lemonEty:etySource :urna_et_LA ;
+                   lemonEty:etyTarget :urna_et_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_venus_veneri
+:etyLink_venus_veneri rdf:type owl:NamedIndividual ,
+                               lemonEty:EtyLink ;
+                      lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/venus_et_LA> ;
+                      lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/veneri_le_IT> ;
+                      rdfs:comment "An etymological relationship between 'venus' (in Latin) and 'veneri' (in Italian)"@en .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_vestibulum_vestibolo
+:etyLink_vestibulum_vestibolo rdf:type owl:NamedIndividual ,
+                                       lemonEty:EtyLink ;
+                              lemonEty:etySource <http://www.semanticweb.org/sabry/llodproject/vestibulum_et_LA> ;
+                              lemonEty:etyTarget <http://www.semanticweb.org/sabry/llodproject/vestibolo_le_IT> ;
+                              rdfs:comment "An etymological relationship between 'vestibulum' (in Latin) and 'vestibolo' (in Italian)"@en .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_vetro_vetrata
+:etyLink_vetro_vetrata rdf:type owl:NamedIndividual ,
+                                lemonEty:EtyLink ;
+                       lemonEty:etySource :vetro_le_IT ;
+                       lemonEty:etyTarget :vetrata_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_vitrum_vetro
+:etyLink_vitrum_vetro rdf:type owl:NamedIndividual ,
+                               lemonEty:EtyLink ;
+                      lemonEty:etySource :vitrum_et_LA ;
+                      lemonEty:etyTarget :vetro_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_volutus_voluta
+:etyLink_volutus_voluta rdf:type owl:NamedIndividual ,
+                                 lemonEty:EtyLink ;
+                        lemonEty:etySource :volutus_et_LA ;
+                        lemonEty:etyTarget :voluta_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_volvo_volta
+:etyLink_volvo_volta rdf:type owl:NamedIndividual ,
+                              lemonEty:EtyLink ;
+                     lemonEty:etySource :volvo_et_LA ;
+                     lemonEty:etyTarget :volta_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etyLink_volvo_volutus
+:etyLink_volvo_volutus rdf:type owl:NamedIndividual ,
+                                lemonEty:EtyLink ;
+                       lemonEty:etySource :volvo_et_LA ;
+                       lemonEty:etyTarget :volutus_et_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etylink_soccus_socculus
+:etylink_soccus_socculus rdf:type owl:NamedIndividual ,
+                                  lemonEty:EtyLink ;
+                         lemonEty:etySource :soccus_et_LA ;
+                         lemonEty:etyTarget :socculus_et_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/etylink_tabula_tabella
+:etylink_tabula_tabella rdf:type owl:NamedIndividual ,
+                                 lemonEty:EtyLink ;
+                        lemonEty:etySource :tabula_et_LA ;
+                        lemonEty:etyTarget :tabella_le_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/saepio_et_LA
+:saepio_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :saepio_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/saepio_lemma_LA
+:saepio_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "saepio"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/socculus_et_LA
+:socculus_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :socculus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/socculus_lemma_LA
+:socculus_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "socculus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/soccus_et_LA
+:soccus_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :soccus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/soccus_lemma_LA
+:soccus_lemma_LA rdf:type owl:NamedIndividual ;
+                 ontolex:writtenRep "soccus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabella_le_IT
+:tabella_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               ontolex:canonicalForm :tabella_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabella_lemma_IT
+:tabella_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tabella"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabellone_etymology
+:tabellone_etymology rdf:type owl:NamedIndividual ,
+                              lemonEty:Etymology ;
+                     lemonEty:hasEtyLink :etyLink_tabella_tabellone ,
+                                         :etylink_tabula_tabella ;
+                     lemonEty:startingLink :etylink_tabula_tabella .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabellone_le_IT
+:tabellone_le_IT rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalEntry ;
+                 lemonEty:etymology :tabellone_etymology ;
+                 ontolex:canonicalForm :tabellone_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabellone_lemma_IT
+:tabellone_lemma_IT rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "tabellone"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/taberna_et_LA
+:taberna_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :taberna_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/taberna_lemma_LA
+:taberna_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "taberna"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabernacolo_etymology
+:tabernacolo_etymology rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabernacolo_le_IT
+:tabernacolo_le_IT rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabernacolo_lemma_IT
+:tabernacolo_lemma_IT rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabernaculum_et_LA
+:tabernaculum_et_LA rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabernaculum_lemma_LA
+:tabernaculum_lemma_LA rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabula_et_LA
+:tabula_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :tabula_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tabula_lemma_LA
+:tabula_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "tabula"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/teatro_etymology
+:teatro_etymology rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/teatro_le_IT
+:teatro_le_IT rdf:type owl:NamedIndividual ,
+                       ontolex:LexicalEntry ;
+              ontolex:canonicalForm :teatro_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/teatro_lemma_IT
+:teatro_lemma_IT rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "teatro"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/teca_etymology
+:teca_etymology rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/teca_le_IT
+:teca_le_IT rdf:type owl:NamedIndividual ,
+                     ontolex:LexicalEntry ;
+            ontolex:canonicalForm :teca_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/teca_lemma_IT
+:teca_lemma_IT rdf:type owl:NamedIndividual ,
+                        ontolex:Form ;
+               ontolex:writtenRep "teca"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/telamon_et_LA
+:telamon_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :telamon_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/telamon_lemma_LA
+:telamon_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "telamon" .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/telamone_etymology
+:telamone_etymology rdf:type owl:NamedIndividual ,
+                             lemonEty:Etymology ;
+                    lemonEty:hasEtyLink :etyLink_telamon_telamone .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/telamone_le_IT
+:telamone_le_IT rdf:type owl:NamedIndividual ,
+                         ontolex:LexicalEntry ;
+                lemonEty:etymology :telamone_etymology ;
+                ontolex:canonicalForm :telamone_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/telamone_lemma_IT
+:telamone_lemma_IT rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:canonicalForm :telamone_lemma_IT ;
+                   ontolex:writtenRep "telamone"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempera_etymology
+:tempera_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempera_le_IT
+:tempera_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               ontolex:canonicalForm :tempera_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempera_lemma_IT
+:tempera_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tempera"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempero_et_LA
+:tempero_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :tempero_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempero_lemma_LA
+:tempero_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tempero"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempus_et_LA
+:tempus_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :tempus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tempus_lemma_LA
+:tempus_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "tempus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/terme_etymology
+:terme_etymology rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/terme_le_IT
+:terme_le_IT rdf:type owl:NamedIndividual ,
+                      ontolex:LexicalEntry ;
+             ontolex:canonicalForm :terme_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/terme_lemma_IT
+:terme_lemma_IT rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "terme"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tesoro_etymology
+:tesoro_etymology rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymology ;
+                  lemonEty:hasEtyLink :etyLink_thesaurus_tesoro .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tesoro_le_IT
+:tesoro_le_IT rdf:type owl:NamedIndividual ,
+                       ontolex:LexicalEntry ;
+              lemonEty:etymology :tesoro_etymology ;
+              ontolex:canonicalForm :tesoro_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tesoro_lemma_IT
+:tesoro_lemma_IT rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "tesoro"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tessera_et_LA
+:tessera_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :tessera_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tessera_lemma_IT
+:tessera_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tessera"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tessera_lemma_LA
+:tessera_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tessera"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tessere_etymology
+:tessere_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_tessera_tessere .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tessere_le_IT
+:tessere_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :tessere_etymology ;
+               ontolex:canonicalForm :tessera_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tetrastilo_etymology
+:tetrastilo_etymology rdf:type owl:NamedIndividual ,
+                               lemonEty:Etymology ;
+                      lemonEty:hasEtyLink :etyLink_tetrastylos_tetrastilo .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tetrastilo_le_IT
+:tetrastilo_le_IT rdf:type owl:NamedIndividual ,
+                           ontolex:LexicalEntry ;
+                  lemonEty:etymology :tetrastilo_etymology ;
+                  ontolex:canonicalForm :tetrastilo_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tetrastilo_lemma_IT
+:tetrastilo_lemma_IT rdf:type owl:NamedIndividual ,
+                              ontolex:Form ;
+                     ontolex:writtenRep "tetrastilo"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tetrastylos_et_LA
+:tetrastylos_et_LA rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymon ;
+                   ontolex:canonicalForm :tetrastylos_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tetrastylos_lemma_LA
+:tetrastylos_lemma_LA rdf:type owl:NamedIndividual ,
+                               ontolex:Form ;
+                      ontolex:canonicalForm :theatrum_lemma_LA ;
+                      ontolex:writtenRep "tetrastylos"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/theatrum_et_LA
+:theatrum_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :theatrum_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/theatrum_lemma_LA
+:theatrum_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "theatrum"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/theca_et_LA
+:theca_et_LA rdf:type owl:NamedIndividual ,
+                      lemonEty:Etymon ;
+             ontolex:canonicalForm :theca_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/theca_lemma_LA
+:theca_lemma_LA rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "theca"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/thermae_et_LA
+:thermae_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :thermae_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/thermae_lemma_LA
+:thermae_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "thermae"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/thesaurus_et_LA
+:thesaurus_et_LA rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymon ;
+                 ontolex:canonicalForm :thesaurus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/thesaurus_lemma_LA
+:thesaurus_lemma_LA rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "thesaurus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburio_etymology
+:tiburio_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_tiburium_tiburio .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburio_le_IT
+:tiburio_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :tiburio_etymology ;
+               ontolex:canonicalForm :tiburio_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburio_lemma_IT
+:tiburio_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tiburio"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburium_et_LA
+:tiburium_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :tiburium_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburium_lemma_LA
+:tiburium_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "tiburium"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburtinus_et_LA
+:tiburtinus_et_LA rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymon ;
+                  ontolex:canonicalForm :tiburtinus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tiburtinus_lemma_LA
+:tiburtinus_lemma_LA rdf:type owl:NamedIndividual ,
+                              ontolex:Form ;
+                     ontolex:writtenRep "tiburtinus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/timpano_etymology
+:timpano_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_tympanum_timpano .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/timpano_le_IT
+:timpano_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :timpano_etymology ;
+               ontolex:canonicalForm :timpano_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/timpano_lemma_IT
+:timpano_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "timpano"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toreutica_etymology
+:toreutica_etymology rdf:type owl:NamedIndividual ,
+                              lemonEty:Etymology ;
+                     lemonEty:hasEtyLink :etyLink_toreutice_toreutica .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toreutica_le_it
+:toreutica_le_it rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalEntry ;
+                 lemonEty:etymology :toreutica_etymology ;
+                 ontolex:canonicalForm :toreutica_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toreutica_lemma_IT
+:toreutica_lemma_IT rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "toreutica"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toreutice_et_LA
+:toreutice_et_LA rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymon ;
+                 ontolex:canonicalForm :toreutice_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toreutice_lemma_LA
+:toreutice_lemma_LA rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "toreutice"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toro_etymology
+:toro_etymology rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymology ;
+                lemonEty:hasEtyLink :etyLink_torus_toro .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toro_le_it
+:toro_le_it rdf:type owl:NamedIndividual ,
+                     ontolex:LexicalEntry ;
+            lemonEty:etymology :toro_etymology ;
+            ontolex:canonicalForm :toro_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/toro_lemma_IT
+:toro_lemma_IT rdf:type owl:NamedIndividual ,
+                        ontolex:Form ;
+               ontolex:writtenRep "toro"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torquo_et_LA
+:torquo_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :torquo_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torquo_lemma_LA
+:torquo_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "torquo"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torre_etymology
+:torre_etymology rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymology ;
+                 lemonEty:hasEtyLink :etyLink_turris_torre .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torre_le_IT
+:torre_le_IT rdf:type owl:NamedIndividual ,
+                      ontolex:LexicalEntry ;
+             lemonEty:etymology :torre_etymology ;
+             ontolex:canonicalForm :torre_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torre_lemma_IT
+:torre_lemma_IT rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "torre"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tortile_etymology
+:tortile_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_tortilis_tortile .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tortile_le_IT
+:tortile_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :tortile_etymology ;
+               ontolex:canonicalForm :tortile_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tortile_lemma_IT
+:tortile_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tortile"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tortilis_et_LA
+:tortilis_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :tortilis_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tortilis_lemma_LA
+:tortilis_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "tortilis"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torus_et_LA
+:torus_et_LA rdf:type owl:NamedIndividual ,
+                      lemonEty:Etymon ;
+             ontolex:canonicalForm :torus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/torus_lemma_LA
+:torus_lemma_LA rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "torus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trabeazione_etymology
+:trabeazione_etymology rdf:type owl:NamedIndividual ,
+                                lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trabeazione_le_IT
+:trabeazione_le_IT rdf:type owl:NamedIndividual ,
+                            ontolex:LexicalEntry ;
+                   lemonEty:etymology :trabeazione_etymology ;
+                   ontolex:canonicalForm :trabeazione_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trabeazione_lemma_LA
+:trabeazione_lemma_LA rdf:type owl:NamedIndividual ,
+                               ontolex:Form ;
+                      ontolex:writtenRep "trabeazione" .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trabs_et_LA
+:trabs_et_LA rdf:type owl:NamedIndividual ,
+                      lemonEty:Etymon ;
+             ontolex:canonicalForm :trabs_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trabs_lemma_LA
+:trabs_lemma_LA rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "trabs"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trans_af_LA
+:trans_af_LA rdf:type owl:NamedIndividual ,
+                      ontolex:Affix ;
+             ontolex:canonicalForm :trans_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trans_lemma_LA
+:trans_lemma_LA rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "trans"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transenna_et_LA
+:transenna_et_LA rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymon ;
+                 ontolex:canonicalForm :transenna_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transenna_etymology
+:transenna_etymology rdf:type owl:NamedIndividual ,
+                              lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transenna_le_IT
+:transenna_le_IT rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalEntry ;
+                 lemonEty:etymology :transenna_etymology ;
+                 ontolex:canonicalForm :transenna_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transenna_lemma_IT
+:transenna_lemma_IT rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "transenna"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transenna_lemma_LA
+:transenna_lemma_LA rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "transenna"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transetto_etymology
+:transetto_etymology rdf:type owl:NamedIndividual ,
+                              lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transetto_le_IT
+:transetto_le_IT rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalEntry ;
+                 lemonEty:etymology :transetto_etymology ;
+                 ontolex:canonicalForm :transetto_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transetto_lemma_IT
+:transetto_lemma_IT rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "transetto"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transfiguratio_et_LA
+:transfiguratio_et_LA rdf:type owl:NamedIndividual ,
+                               lemonEty:Etymon ;
+                      ontolex:canonicalForm :transfiguratio_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/transfiguratio_lemma_LA
+:transfiguratio_lemma_LA rdf:type owl:NamedIndividual ,
+                                  ontolex:Form ;
+                         ontolex:writtenRep "transfiguratio"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trasfigurazione_etymology
+:trasfigurazione_etymology rdf:type owl:NamedIndividual ,
+                                    lemonEty:Etymology ;
+                           lemonEty:hasEtyLink :etyLink_transfiguratio_trasfigurazione .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trasfigurazione_le_IT
+:trasfigurazione_le_IT rdf:type owl:NamedIndividual ,
+                                ontolex:LexicalEntry ;
+                       lemonEty:etymology :trasfigurazione_etymology ;
+                       ontolex:canonicalForm :trasfigurazione_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trasfigurazione_lemma_IT
+:trasfigurazione_lemma_IT rdf:type owl:NamedIndividual ,
+                                   ontolex:Form ;
+                          ontolex:writtenRep "trasfigurazione"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/travertino_etymology
+:travertino_etymology rdf:type owl:NamedIndividual ,
+                               lemonEty:Etymology .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/travertino_le_IT
+:travertino_le_IT rdf:type owl:NamedIndividual ,
+                           ontolex:LexicalEntry ;
+                  lemonEty:etymology :travertino_etymology ;
+                  ontolex:canonicalForm :travertino_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/travertino_lemma_IT
+:travertino_lemma_IT rdf:type owl:NamedIndividual ,
+                              ontolex:Form ;
+                     ontolex:writtenRep "travertino"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tribuna_etymology
+:tribuna_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_tribunal_tribuna .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tribuna_le_IT
+:tribuna_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :tribuna_etymology ;
+               ontolex:canonicalForm :tribuna_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tribuna_lemma_IT
+:tribuna_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tribuna"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tribunal_et_LA
+:tribunal_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :tribunal_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tribunal_lemma_LA
+:tribunal_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "tribunal"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triclinio_etymology
+:triclinio_etymology rdf:type owl:NamedIndividual ,
+                              lemonEty:Etymology ;
+                     lemonEty:hasEtyLink :etyLink_triclinium_triclinio .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triclinio_le_IT
+:triclinio_le_IT rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalEntry ;
+                 lemonEty:etymology :triclinio_etymology ;
+                 ontolex:canonicalForm :triclinio_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triclinio_lemma_IT
+:triclinio_lemma_IT rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "triclinio"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triclinium_et_LA
+:triclinium_et_LA rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymon ;
+                  ontolex:canonicalForm :triclinium_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triclinium_lemma_LA
+:triclinium_lemma_LA rdf:type owl:NamedIndividual ,
+                              ontolex:Form ;
+                     ontolex:writtenRep "triclinium"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trifora_etymology
+:trifora_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_triforis_trifora .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trifora_le_IT
+:trifora_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :trifora_etymology ;
+               ontolex:canonicalForm :trifora_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/trifora_lemma_IT
+:trifora_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "trifora"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforio_etymology
+:triforio_etymology rdf:type owl:NamedIndividual ,
+                             lemonEty:Etymology ;
+                    lemonEty:hasEtyLink :etyLink_triforium_triforio .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforio_le_IT
+:triforio_le_IT rdf:type owl:NamedIndividual ,
+                         ontolex:LexicalEntry ;
+                lemonEty:etymology :triforio_etymology ;
+                ontolex:canonicalForm :triforio_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforio_lemma_IT
+:triforio_lemma_IT rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "triforio"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforis_et_LA
+:triforis_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :triforis_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforis_lemma_LA
+:triforis_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "triforis"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforium_et_LA
+:triforium_et_LA rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymon ;
+                 ontolex:canonicalForm :triforium_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triforium_lemma_LA
+:triforium_lemma_LA rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "triforium"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triglifo_etymology
+:triglifo_etymology rdf:type owl:NamedIndividual ,
+                             lemonEty:Etymology ;
+                    lemonEty:hasEtyLink :etyLink_triglyphus_triglifo .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triglifo_le_IT
+:triglifo_le_IT rdf:type owl:NamedIndividual ,
+                         ontolex:LexicalEntry ;
+                lemonEty:etymology :triglifo_etymology ;
+                ontolex:canonicalForm :triglifo_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triglifo_lemma_IT
+:triglifo_lemma_IT rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "triglifo"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triglyphus_et_LA
+:triglyphus_et_LA rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymon ;
+                  ontolex:canonicalForm :triglyphus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/triglyphus_lemma_LA
+:triglyphus_lemma_LA rdf:type owl:NamedIndividual ,
+                              ontolex:Form ;
+                     ontolex:writtenRep "triglyphus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tripode_etymology
+:tripode_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_tripus_tripode .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tripode_le_IT
+:tripode_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :tripode_etymology ;
+               ontolex:canonicalForm :tripode_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tripode_lemma_IT
+:tripode_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tripode"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tripus_et_LA
+:tripus_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :tripus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tripus_lemma_LA
+:tripus_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "tripus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tufo_etymology
+:tufo_etymology rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymology ;
+                lemonEty:hasEtyLink :etyLink_tuphus_tufo .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tufo_le_IT
+:tufo_le_IT rdf:type owl:NamedIndividual ,
+                     ontolex:LexicalEntry ;
+            lemonEty:etymology :tufo_etymology ;
+            ontolex:canonicalForm :tufo_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tufo_lemma_IT
+:tufo_lemma_IT rdf:type owl:NamedIndividual ,
+                        ontolex:Form ;
+               ontolex:writtenRep "tufo"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tumulo_etymology
+:tumulo_etymology rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymology ;
+                  lemonEty:hasEtyLink :etyLink_tumulus_tumulo .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tumulo_le_IT
+:tumulo_le_IT rdf:type owl:NamedIndividual ,
+                       ontolex:LexicalEntry ;
+              lemonEty:etymology :tumulo_etymology ;
+              ontolex:canonicalForm :tumulo_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tumulo_lemma_IT
+:tumulo_lemma_IT rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "tumulo"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tumulus_et_LA
+:tumulus_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :tumulus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tumulus_lemma_LA
+:tumulus_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "tumulus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuphus_et_LA
+:tuphus_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :tuphus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuphus_lemma_LA
+:tuphus_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "tuphus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/turris_et_LA
+:turris_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :turris_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/turris_lemma_LA
+:turris_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "turris"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuscanico_etymology
+:tuscanico_etymology rdf:type owl:NamedIndividual ,
+                              lemonEty:Etymology ;
+                     lemonEty:hasEtyLink :etyLink_tuscanicus_tuscanico .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuscanico_le_IT
+:tuscanico_le_IT rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalEntry ;
+                 lemonEty:etymology :tuscanico_etymology ;
+                 ontolex:canonicalForm :tuscanico_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuscanico_lemma_IT
+:tuscanico_lemma_IT rdf:type owl:NamedIndividual ,
+                             ontolex:Form ;
+                    ontolex:writtenRep "tuscanico"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuscanicus_et_LA
+:tuscanicus_et_LA rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymon ;
+                  ontolex:canonicalForm :tuscanicus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tuscanicus_lemma_LA
+:tuscanicus_lemma_LA rdf:type owl:NamedIndividual ,
+                              ontolex:Form ;
+                     ontolex:writtenRep "tuscanicus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tympanum_et_LA
+:tympanum_et_LA rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymon ;
+                ontolex:canonicalForm :tympanum_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/tympanum_lemma_LA
+:tympanum_lemma_LA rdf:type owl:NamedIndividual ,
+                            ontolex:Form ;
+                   ontolex:writtenRep "tympanum"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/urna_et_LA
+:urna_et_LA rdf:type owl:NamedIndividual ,
+                     lemonEty:Etymon ;
+            ontolex:canonicalForm :urna_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/urna_etymology
+:urna_etymology rdf:type owl:NamedIndividual ,
+                         lemonEty:Etymology ;
+                lemonEty:hasEtyLink :etyLink_urna_urna .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/urna_le_IT
+:urna_le_IT rdf:type owl:NamedIndividual ,
+                     ontolex:LexicalEntry ;
+            lemonEty:etymology :urna_etymology ;
+            ontolex:canonicalForm :urna_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/urna_lemma_IT
+:urna_lemma_IT rdf:type owl:NamedIndividual ,
+                        ontolex:Form ;
+               ontolex:writtenRep "urna"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/urna_lemma_LA
+:urna_lemma_LA rdf:type owl:NamedIndividual ,
+                        ontolex:Form ;
+               ontolex:writtenRep "urna"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vestibolo_sense
+:vestibolo_sense rdf:type owl:NamedIndividual ,
+                          ontolex:LexicalSense .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vetrata_etymology
+:vetrata_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_vetro_vetrata ,
+                                       :etyLink_vitrum_vetro ;
+                   lemonEty:startingLink :etyLink_vitrum_vetro .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vetrata_le_IT
+:vetrata_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :vetrata_etymology ;
+               ontolex:canonicalForm :vetrata_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vetrata_lemma_IT
+:vetrata_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "vetrata"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vetro_etymology
+:vetro_etymology rdf:type owl:NamedIndividual ,
+                          lemonEty:Etymology ;
+                 lemonEty:hasEtyLink :etyLink_vitrum_vetro .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vetro_le_IT
+:vetro_le_IT rdf:type owl:NamedIndividual ,
+                      ontolex:LexicalEntry ;
+             lemonEty:etymology :vetro_etymology ;
+             ontolex:canonicalForm :vetro_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vetro_lemma_IT
+:vetro_lemma_IT rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "vetro"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vitrum_et_LA
+:vitrum_et_LA rdf:type owl:NamedIndividual ,
+                       lemonEty:Etymon ;
+              ontolex:canonicalForm :vitrum_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/vitrum_lemma_LA
+:vitrum_lemma_LA rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "vitrum"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volta__etymology
+:volta__etymology rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymology ;
+                  lemonEty:hasEtyLink :etyLink_volvo_volta .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volta_le_IT
+:volta_le_IT rdf:type owl:NamedIndividual ,
+                      ontolex:LexicalEntry ;
+             lemonEty:etymology :volta__etymology ;
+             ontolex:canonicalForm :volta_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volta_lemma_IT
+:volta_lemma_IT rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "volta"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/voluta_etymology
+:voluta_etymology rdf:type owl:NamedIndividual ,
+                           lemonEty:Etymology ;
+                  lemonEty:hasEtyLink :etyLink_volutus_voluta ,
+                                      :etyLink_volvo_volutus ;
+                  lemonEty:startingLink :etyLink_volvo_volutus .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/voluta_le_IT
+:voluta_le_IT rdf:type owl:NamedIndividual ,
+                       ontolex:LexicalEntry ;
+              lemonEty:etymology :voluta_etymology ;
+              ontolex:canonicalForm :voluta_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/voluta_lemma_IT
+:voluta_lemma_IT rdf:type owl:NamedIndividual ,
+                          ontolex:Form ;
+                 ontolex:writtenRep "voluta"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volutus_et_LA
+:volutus_et_LA rdf:type owl:NamedIndividual ,
+                        lemonEty:Etymon ;
+               ontolex:canonicalForm :volutus_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volutus_lemma_LA
+:volutus_lemma_LA rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "volutus"@la .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volvo_et_LA
+:volvo_et_LA rdf:type owl:NamedIndividual ,
+                      lemonEty:Etymon ;
+             ontolex:canonicalForm :volvo_lemma_LA .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/volvo_lemma_LA
+:volvo_lemma_LA rdf:type owl:NamedIndividual ,
+                         ontolex:Form ;
+                ontolex:writtenRep "volvo"@it .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/zoccolo_etymology
+:zoccolo_etymology rdf:type owl:NamedIndividual ,
+                            lemonEty:Etymology ;
+                   lemonEty:hasEtyLink :etyLink_socculus_zoccolo ,
+                                       :etylink_soccus_socculus ;
+                   lemonEty:startingLink :etylink_soccus_socculus .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/zoccolo_le_IT
+:zoccolo_le_IT rdf:type owl:NamedIndividual ,
+                        ontolex:LexicalEntry ;
+               lemonEty:etymology :zoccolo_etymology ;
+               ontolex:canonicalForm :zoccolo_lemma_IT .
+
+
+###  http://www.semanticweb.org/sabry/ontologies/2025/etimologiaLLOD/zoccolo_lemma_IT
+:zoccolo_lemma_IT rdf:type owl:NamedIndividual ,
+                           ontolex:Form ;
+                  ontolex:writtenRep "zoccolo"@it .
+
+
+###  http://www.w3.org/ns/lemon/lime
+<http://www.w3.org/ns/lemon/lime> rdf:type owl:NamedIndividual ,
+                                           <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  https://www.wikidata.org/wiki/Q301276
+<https://www.wikidata.org/wiki/Q301276> rdf:type owl:NamedIndividual ;
+                                        ontolex:lexicalizedSense :vestibolo_sense ;
+                                        terms:isPartOf "https://www.wikidata.org/wiki/Wikidata:Main_Page" ;
+                                        skos:definition "Vano d’ingresso della domus romana."@it .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
